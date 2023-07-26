@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Penhora</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Penhora</h1>
+    <div class="input-group">
+      <label for="data-ini">Data Inicial:</label>
+      <input type="date" id="data-ini">
+      <label for="data-fim">Data Final:</label>
+      <input type="date" id="data-fim">
+    </div>
+    <div class="input-group">
+      <label for="valor-salario">Valor do Salário:</label>
+      <input type="text" id="valor-salario" placeholder="Informe o valor do salário">
+      <label for="per-salario">Percentual do Salário:</label>
+      <input type="text" id="per-salario" placeholder="Informe o percentual do salário">
+    </div>
+    <div class="input-group">
+      <label for="multa">Multa (%):</label>
+      <input type="text" id="multa" placeholder="Informe a porcentagem da multa">
+    </div>
+    <div class="input-group">
+      <label for="tipo-salario">Tipo de Salário:</label>
+      <select id="tipo-salario">
+        <option value="0">Mínimo</option>
+        <option value="1">Fixo</option>
+        <option value="2">Porcentagem</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="decimo-terceiro">Décimo Terceiro:</label>
+      <select id="decimo-terceiro">
+        <option value="0">Não</option>
+        <option value="1">Sim</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="subsequente">Subsequente:</label>
+      <select id="subsequente">
+        <option value="0">Sim</option>
+        <option value="1">Não</option>
+      </select>
+    </div>
+    <button class="calculate-btn">Calcular</button>
+    <div class="results">
+      <h2>Resultados:</h2>
+      <div class="result-details">
+        <!-- Aqui serão exibidos os resultados calculados -->
+      </div>
+    </div>
+  </div>
+  <!-- Importe a biblioteca moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+  <script src="cal.js"></script>
+</body>
+</html>
